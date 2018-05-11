@@ -43,6 +43,12 @@ public class Player {
     public Card getCardFromHand(int index) {
         return hand.remove(index);
     }
+    
+    public void draw(int number) {
+        for(int i = 1; i <= number; i++) {
+            draw();
+        }
+    }
 
     /**
      * 
