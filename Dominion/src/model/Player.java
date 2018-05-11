@@ -20,6 +20,7 @@ public class Player {
     private Dominion model;
     private int actions;
     private int buys;
+    private int money;
     
     public Player(String name, Dominion model) {
         this.name = name;
@@ -86,4 +87,10 @@ public class Player {
     public void addToDiscard(Card c) {
         discard.insert(c);
     }
+
+	public void incrimentMoney() {
+		money += amount;
+		if(money < 0)
+			money = 0;
+	}
 }
