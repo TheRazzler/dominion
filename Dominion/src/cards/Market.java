@@ -18,7 +18,7 @@ public class Market extends Kingdom {
         Player p = model.getCurrentPlayer();
         p.incrementActions(1);
         p.draw();
-        p.incrimentMoney();
+        p.incrementMoney(1);
 		// TODO Auto-generated method stub
 
 	}

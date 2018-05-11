@@ -88,7 +88,7 @@ public class Player {
         discard.insert(c);
     }
 
-	public void incrimentMoney() {
+	public void incrementMoney(int amount) {
 		money += amount;
 		if(money < 0)
 			money = 0;
